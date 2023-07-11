@@ -1,0 +1,88 @@
+.schedule-cont{
+    height: 250px;
+    width: 480px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+   
+
+   
+    .headline{
+        background-color: white;
+        display: flex;
+        gap: 40px;
+        
+        p{     
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .add{
+            border: none;
+            background-color: rgb(108, 148, 250);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .add:hover{
+            background-color:rgb(159, 185, 252) ;
+        }
+    }
+    .list{
+        overflow-y:scroll;
+
+        .schedules{
+            display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    
+    .dash{
+        width: 10px;
+        height: 80px;
+        background-color: rgb(108, 148, 250);
+        border-radius:5px ;
+    }
+    .content{
+        .title{
+            font-size: larger;
+            font-weight: 500;
+            color: rgb(87, 86, 86);
+        }
+        .sub{
+            color: rgb(153, 153, 153);
+        }
+    }
+}
+}
+}
+.list::-webkit-scrollbar{
+   display: none;
+}
+
+@media screen and (min-width:1000px) and (max-width:1300px){
+    .schedule-cont{
+        height: 180px;
+        gap: 10px;
+        margin-top: 15px;
+        .headline{
+            font-size:large;
+        }
+        .schedules{
+            .dash{
+                height: 60px;
+            }
+            .content{
+                .title{
+                    font-size: medium;
+                    font-weight: 400;
+                }
+                .sub{
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
